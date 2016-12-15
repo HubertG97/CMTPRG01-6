@@ -1,6 +1,6 @@
 var express = require('express');
     mongoose = require('mongoose');
-
+    bodyParser =  require('body-parser');
 
 var db = mongoose.connect('mongodb://localhost/trackAPI');
 
@@ -10,23 +10,17 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 
-var trackRouter = express.Router();
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
-trackRouter.route('/Tracks')
-    .get(function(reg,res){
-        Track.find(function(err,tracks){
-           if(err)
-               res.status(500).send(err);
-            else
-                res.json(tracks);
-        });
-    });
+trackRouter = require('./Routes/trackRoutes')(Track);
 
-app.use('/api', trackRouter);
+app.use('/api/tracks', trackRouter);
+//app.use('/api/artist', artistRouter);
 
 
 
-app.get('/', function(reg, res){
+app.get('/', function(req, res){
     res.send('Welcome to my API!');
 });
 
