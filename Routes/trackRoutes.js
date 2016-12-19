@@ -26,7 +26,7 @@ var routes = function(Track){
             });
         });
 
-    trackRouter.route('/Tracks/:trackId')
+    trackRouter.route('/:trackId')
 
         .get(function(req,res){
             var query = {};
@@ -40,7 +40,20 @@ var routes = function(Track){
                 else
                     res.json(track);
             });
-        });
+        })
+        .put(function(req, res){
+            Track.findById(req.params.trackId, function(err,track){
+                if(err)
+                    res.status(500).send(err);
+                else
+                    track.title = req.body.title;
+                    track.artist = req.body.artist;
+                    track.genre = req.body.genre;
+                    track.played = req.body.played;
+                    track.save();
+                    res.json(track);
+            });
+    });
     return trackRouter;
 };
 
