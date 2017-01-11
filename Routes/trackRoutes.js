@@ -3,28 +3,10 @@ var express = require('express');
 var routes = function(Track){
     var trackRouter = express.Router();
 
+    var trackController = require('../controllers/trackController')(Track)
     trackRouter.route('/')
-        .post(function(req, res){
-            var track = new Track(req.body);
-
-            console.log(track);
-            track.save();
-            res.status(201).send(track);
-        })
-        .get(function(req,res){
-            var query = {};
-
-            if(req.query.genre){
-                query.genre = req.query.genre;
-            }
-            Track.find(query, function(err,tracks){
-
-                if(err)
-                    res.status(500).send(err);
-                else
-                    res.json(tracks);
-            });
-        });
+        .post(trackController.post)
+        .get(trackController.get);
     trackRouter.use('/:trackId', function(req, res, next){
         Track.findById(req.params.trackId, function(err,track){
             if(err)
@@ -42,12 +24,12 @@ var routes = function(Track){
     })
     trackRouter.route('/:trackId')
         .get(function(req,res){
-            /*var query = {};
 
-            if(req.query.genre){
-                query.genre = req.query.genre;
-            }*/
-            res.json(req.track);
+            var returnTrack = req.track.toJSON();
+            returnTrack.links = {};
+            var newLink = 'http://' + req.headers.host + '/api/tracks/?genre=' + returnTrack.genre;
+            returnTrack.links.FilterByThisGenre = newLink.replace(' ', '%20');
+            res.json(returnTrack);
 
         })
         .put(function(req, res){
