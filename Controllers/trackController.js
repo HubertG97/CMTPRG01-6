@@ -10,6 +10,7 @@ var trackController = function(Track){
 
     var get = function(req,res){
         var query = {};
+        var result = {};
 
         if(req.query.genre){
             query.genre = req.query.genre;
@@ -42,7 +43,7 @@ var trackController = function(Track){
         returnTrack.links = {};
         var newLink = 'http://' + req.headers.host + '/api/tracks/?genre=' + returnTrack.genre;
         returnTrack.links.FilterByThisGenre = newLink.replace(' ', '%20');
-        res.json(returnMovie);
+        res.json(returnTrack);
     };
 
     var singlePut = function (req, res) {
@@ -77,6 +78,6 @@ var trackController = function(Track){
         singlePut: singlePut,
         singleDelete: singleDelete
     }
-}
+};
 
 module.exports = trackController;
