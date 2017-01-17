@@ -3,10 +3,23 @@ var express = require('express');
 var routes = function(Track){
     var trackRouter = express.Router();
 
-    var trackController = require('../controllers/trackController')(Track)
+    var trackController = require('../Controllers/trackController')(Track)
+
+    function setCollectionOptions(req, res, next) {
+        res.header('Access-Control-Allow-Methods', "GET, POST, OPTIONS");
+        return next();
+    }
+
+    function setSingleOptions(req, res, next) {
+        res.header('Access-Control-Allow-Methods', "GET, PUT, DELETE, OPTIONS");
+        return next();
+    }
+
     trackRouter.route('/')
-        .post(trackController.post)
-        .get(trackController.get);
+        .post([setCollectionOptions, trackController.post])
+        .get([setCollectionOptions, trackController.get])
+        .options([setCollectionOptions, trackController.getOptions]);
+
     trackRouter.use('/:trackId', function(req, res, next){
         Track.findById(req.params.trackId, function(err,track){
             if(err)
