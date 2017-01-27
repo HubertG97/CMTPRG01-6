@@ -15,23 +15,69 @@ var trackController = function(Track){
         if(req.query.genre){
             query.genre = req.query.genre;
         }
-        Track.find(query, function(err,tracks){
+        Track.find(query, '-__v').exec(function (err, tracks) {
 
-            if(err)
+            if (err)
                 res.status(500).send(err);
-            else {
-                var returnTracks = [];
-                tracks.forEach(function(element, index, array){
-                    var newTrack = element.toJSON();
-                    newTrack.links = {};
-                    newTrack.links.self = 'http://' + req.headers.host + '/api/tracks/' + newTrack._id
-                    returnTracks.push(newTrack)
-                });
-                res.json(returnTracks);
+            else
+                var trackArray = [];
+            result.items = trackArray;
+            result._links = {
+                self: {
+                    href: 'http://' + req.headers.host + '/api/tracks/'
+                }
+            };
+            result.pagination = {
+                "pagination": {
+                    "currentPage": 1,
+                    "currentItems": 6,
+                    "totalPages": 1,
+                    "totalItems": 6,
+                    "_links": {
+                        "first": {
+                            "page": 1,
+                            "href": 'http://' + req.headers.host + '/api/tracks/'
+                        },
+                        "last": {
+                            "page": 1,
+                            "href": 'http://' + req.headers.host + '/api/tracks/'
+                        },
 
-            }
+                        "previous": {
+                            "page": 1,
+                            "href": 'http://' + req.headers.host + '/api/tracks/'
+                        },
+                        "next": {
+                            "page": 1,
+                            "href": 'http://' + req.headers.host + '/api/tracks/'
+                        }
+                    }
+                }
+            };
+
+
+            tracks.forEach(function (element) {
+                var newTrack = element.toJSON();
+                newTrack._links = {};
+                newTrack._links.self = {
+
+                    href: 'http://' + req.headers.host + '/api/tracks/' + newTrack._id
+                };
+                newTrack._links.collection = {
+
+                    href: 'http://' + req.headers.host + '/api/tracks'
+                };
+
+                newTrack._links.collection.href =  newTrack._links.collection.href.replace(/ /g, '%20');
+
+                trackArray.push(newTrack);
+            });
+
+            res.json(result);
         });
-    }
+    };
+
+
 
     var getOptions = function (req, res) {
         return res.json(res.get('Access-Control-Allow-Methods'))
@@ -42,7 +88,7 @@ var trackController = function(Track){
 
         returnTrack.links = {};
         var newLink = 'http://' + req.headers.host + '/api/tracks/?genre=' + returnTrack.genre;
-        returnTrack.links.FilterByThisGenre = newLink.replace(' ', '%20');
+        returnTrack.links.FilterByThisGenre = newLink.replace(/ /g, '%20');
         res.json(returnTrack);
     };
 
@@ -65,7 +111,7 @@ var trackController = function(Track){
             if (err)
                 res.status(500).send(err);
             else {
-                res.status(204).send('removed');
+                res.status(204).send('Deleted');
             }
         });
     };
