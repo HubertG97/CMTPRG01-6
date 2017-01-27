@@ -2,7 +2,7 @@ var express = require('express');
     mongoose = require('mongoose');
     bodyParser =  require('body-parser');
 
-var db = mongoose.connect('mongodb://localhost/trackAPI');
+var db = mongoose.connect('mongodb://<Heroku>:<password>@ds161518.mlab.com:61518/heroku_x2nljz03');
 
 var Track = require('./models/trackModel');
 

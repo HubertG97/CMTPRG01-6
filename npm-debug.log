@@ -1,27 +1,47 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Users\\Hubert\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'run',
-1 verbose cli   'dev' ]
+1 verbose cli   'start' ]
 2 info using npm@3.8.7
 3 info using node@v5.11.0
-4 verbose stack Error: missing script: dev
-4 verbose stack     at run (C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\lib\run-script.js:147:19)
-4 verbose stack     at C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\lib\run-script.js:57:5
-4 verbose stack     at C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:345:5
-4 verbose stack     at checkBinReferences_ (C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:309:45)
-4 verbose stack     at final (C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:343:3)
-4 verbose stack     at then (C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:113:5)
-4 verbose stack     at C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:300:12
-4 verbose stack     at C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
-4 verbose stack     at tryToString (fs.js:414:3)
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:401:12)
-5 verbose cwd C:\Users\Hubert\Documents\GitHub\CMTPRG01-6
-6 error Windows_NT 6.3.9600
-7 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Hubert\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
-8 error node v5.11.0
-9 error npm  v3.8.7
-10 error missing script: dev
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle trackapi@1.0.0~prestart: trackapi@1.0.0
+6 silly lifecycle trackapi@1.0.0~prestart: no script for prestart, continuing
+7 info lifecycle trackapi@1.0.0~start: trackapi@1.0.0
+8 verbose lifecycle trackapi@1.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle trackapi@1.0.0~start: PATH: C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;C:\Users\Hubert\Documents\GitHub\CMTPRG01-6\node_modules\.bin;C:\Program Files\nodejs;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\HashiCorp\Vagrant\bin;C:\cygwin64\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\Program Files (x86)\Calibre2\;C:\Users\Hubert\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Hubert\AppData\Roaming\Composer\vendor\bin
+10 verbose lifecycle trackapi@1.0.0~start: CWD: C:\Users\Hubert\Documents\GitHub\CMTPRG01-6
+11 silly lifecycle trackapi@1.0.0~start: Args: [ '/d /s /c', 'node app.js' ]
+12 silly lifecycle trackapi@1.0.0~start: Returned: code: 1  signal: null
+13 info lifecycle trackapi@1.0.0~start: Failed to exec start script
+14 verbose stack Error: trackapi@1.0.0 start: `node app.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\lib\utils\lifecycle.js:244:16)
+14 verbose stack     at emitTwo (events.js:100:13)
+14 verbose stack     at EventEmitter.emit (events.js:185:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Users\Hubert\AppData\Roaming\npm\node_modules\npm\lib\utils\spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:100:13)
+14 verbose stack     at ChildProcess.emit (events.js:185:7)
+14 verbose stack     at maybeClose (internal/child_process.js:850:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+15 verbose pkgid trackapi@1.0.0
+16 verbose cwd C:\Users\Hubert\Documents\GitHub\CMTPRG01-6
+17 error Windows_NT 6.3.9600
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Hubert\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "start"
+19 error node v5.11.0
+20 error npm  v3.8.7
+21 error code ELIFECYCLE
+22 error trackapi@1.0.0 start: `node app.js`
+22 error Exit status 1
+23 error Failed at the trackapi@1.0.0 start script 'node app.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the trackapi package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node app.js
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs trackapi
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls trackapi
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
