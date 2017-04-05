@@ -3,7 +3,7 @@ var express = require('express');
 var routes = function(Track){
     var trackRouter = express.Router();
 
-    var trackController = require('../Controllers/trackController')(Track);
+    var trackController = require('../Controllers/trackController')(Track)
 
 
     function setCollectionOptions(req, res, next) {
@@ -51,7 +51,7 @@ var routes = function(Track){
                 res.status(404).send('No Track Found');
             }
         });
-    });
+    })
     trackRouter.route('/:trackId')
         .get([setSingleOptions, trackController.singleGet])
         .put([setSingleOptions, trackController.singlePut])
