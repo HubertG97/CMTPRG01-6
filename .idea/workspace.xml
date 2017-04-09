@@ -65,6 +65,7 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="147">
               <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
 =======
@@ -75,6 +76,10 @@
             <state relative-caret-position="68">
               <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
 >>>>>>> parent of 93c9f50... uri
+=======
+            <state relative-caret-position="357">
+              <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+>>>>>>> parent of bebf7ce... controller
               <folding />
             </state>
           </provider>
@@ -85,11 +90,16 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="168">
               <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
 =======
             <state relative-caret-position="476">
               <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+=======
+            <state relative-caret-position="-587">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+>>>>>>> parent of bebf7ce... controller
 =======
             <state relative-caret-position="-587">
               <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
@@ -103,9 +113,14 @@
         <entry file="file://$PROJECT_DIR$/Controllers/trackController.js">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="995">
               <caret line="59" column="11" lean-forward="true" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
 >>>>>>> parent of cbd9d73... lik self
+=======
+            <state relative-caret-position="416">
+              <caret line="77" column="34" lean-forward="false" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+>>>>>>> parent of bebf7ce... controller
 =======
             <state relative-caret-position="416">
               <caret line="77" column="34" lean-forward="false" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
@@ -208,6 +223,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -217,10 +233,13 @@
     <option name="height" value="1040" />
 >>>>>>> parent of cbd9d73... lik self
 =======
+=======
+>>>>>>> parent of bebf7ce... controller
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
+<<<<<<< HEAD
 >>>>>>> parent of bebf7ce... controller
 =======
     <option name="x" value="-8" />
@@ -228,6 +247,8 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
 >>>>>>> parent of 93c9f50... uri
+=======
+>>>>>>> parent of bebf7ce... controller
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -440,6 +461,7 @@
       <workItem from="1484245987365" duration="842000" />
       <workItem from="1484569479824" duration="599000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1484644707497" duration="7066000" />
 <<<<<<< HEAD
       <workItem from="1485261147620" duration="79000" />
@@ -456,10 +478,14 @@
 =======
       <workItem from="1485512467298" duration="4053000" />
 >>>>>>> parent of 93c9f50... uri
+=======
+      <workItem from="1484644707497" duration="4142000" />
+>>>>>>> parent of bebf7ce... controller
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -473,6 +499,9 @@
 =======
     <option name="totallyTimeSpent" value="48937000" />
 >>>>>>> parent of 93c9f50... uri
+=======
+    <option name="totallyTimeSpent" value="27611000" />
+>>>>>>> parent of bebf7ce... controller
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,6 +513,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -509,6 +539,12 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> parent of 93c9f50... uri
+=======
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> parent of bebf7ce... controller
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -516,6 +552,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -528,6 +565,9 @@
 =======
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 93c9f50... uri
+=======
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3347779" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of bebf7ce... controller
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
 >>>>>>> parent of cbd9d73... lik self
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -923,6 +963,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alternative.json">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="84">
@@ -936,6 +977,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/trackModel.js">
+=======
+>>>>>>> parent of bebf7ce... controller
 =======
 >>>>>>> parent of bebf7ce... controller
       <provider selected="true" editor-type-id="text-editor">
@@ -971,6 +1014,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -980,6 +1024,12 @@
         <state relative-caret-position="995">
           <caret line="59" column="11" lean-forward="true" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
 >>>>>>> parent of cbd9d73... lik self
+=======
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+>>>>>>> parent of bebf7ce... controller
 =======
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1000,10 +1050,13 @@
     <entry file="file://$PROJECT_DIR$/Routes/trackRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="476">
           <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
 >>>>>>> parent of cbd9d73... lik self
 =======
+=======
+>>>>>>> parent of bebf7ce... controller
         <state relative-caret-position="-587">
           <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding />
@@ -1014,6 +1067,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="77" column="34" lean-forward="false" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+<<<<<<< HEAD
 >>>>>>> parent of bebf7ce... controller
 =======
     <entry file="file://$PROJECT_DIR$/app.js">
@@ -1021,6 +1075,8 @@
         <state relative-caret-position="68">
           <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
 >>>>>>> parent of 93c9f50... uri
+=======
+>>>>>>> parent of bebf7ce... controller
           <folding />
         </state>
       </provider>
