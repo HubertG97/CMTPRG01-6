@@ -3,6 +3,7 @@ var express = require('express');
     bodyParser =  require('body-parser');
 
 var db = mongoose.connect('mongodb://localhost/trackAPI');
+mongoose.Promise = global.Promise;
 
 var Track = require('./models/trackModel');
 
